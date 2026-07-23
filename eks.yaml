@@ -7,6 +7,6 @@ metadata:
 
 managedNodeGroups:
   - name: roboshop-dev-ng
-    instanceTypes: ["m5.large", "t3.medium"] #we can give multiple instance types based on the workload and when we use spoton instance aws will give which ever possible instances that it have available.
+    instanceTypes: ["t3.medium", "t3.large", "t3.xlarge"] #we can give multiple instance types based on the workload and when we use spoton instance aws will give which ever possible instances that it have available.
     desiredCapacity: 2 # by default aws will choose 3 for desired capacity
     spot: true
